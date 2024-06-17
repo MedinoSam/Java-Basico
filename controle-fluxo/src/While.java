@@ -15,5 +15,6 @@ public class While {
 
             inicio++;
         }
+        scanner.close();
     }
 }

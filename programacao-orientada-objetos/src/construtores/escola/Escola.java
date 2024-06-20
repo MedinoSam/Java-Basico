@@ -1,4 +1,4 @@
-package escola;
+package construtores.escola;
 
 public class Escola {
     public static void main(String[] args) {

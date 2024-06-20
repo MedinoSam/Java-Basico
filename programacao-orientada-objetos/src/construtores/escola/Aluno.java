@@ -1,4 +1,4 @@
-package escola;
+package construtores.escola;
 
 public class Aluno {
     //padrao java beans

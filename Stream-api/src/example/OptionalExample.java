@@ -1,3 +1,4 @@
+package example;
 import java.util.Optional;
 
 public class OptionalExample {

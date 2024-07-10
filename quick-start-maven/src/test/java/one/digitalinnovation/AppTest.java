@@ -1,38 +1,28 @@
 package one.digitalinnovation;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * Unit test for simple App.
- */
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
+
 public class AppTest 
-    extends TestCase
 {
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
+    @Test
+     void testHelloWorld()
     {
-        super( testName );
+        assertEquals("Hello World!", getGreeting());
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
+    public String getGreeting()
     {
-        return new TestSuite( AppTest.class );
+        return "Hello World!";
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    @Test
+     void validarLancamento(){
+        int[] listaUm = {1,2,3,4,5};
+        int[] listaDois = {1,2,4,5,3};
+        Assertions.assertArrayEquals(listaUm, listaDois);
     }
 }

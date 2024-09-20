@@ -35,12 +35,12 @@ public class UsuarioRepository {
     }
     public List<Usuario> listAll(){
         List<Usuario> usuarios = new ArrayList<>();
-        usuarios.add(new Usuario("gleyson","password"));
-        usuarios.add(new Usuario("frank","masterpass"));
+        usuarios.add(new Usuario("samuel","teste"));
+        usuarios.add(new Usuario("steve","jobs"));
         return usuarios;
     }
     public Usuario finByName(String nome){
         System.out.println(String.format("GET/nome - Recebendo o nome: %s para localizar um usuário", nome));
-        return new Usuario("gleyson","password");
+        return new Usuario("samuel","medino");
     }
 }
